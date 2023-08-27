@@ -1,0 +1,132 @@
+/* Banner container */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 93px;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Search and Info container */
+.banner__search,
+.banner__info {
+  padding: 70px;
+}
+
+/* Button animation */
+.banner__searchButton,
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #0a0000d8;
+
+  padding: 20px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  will-change: transform;
+}
+
+.banner__searchButton:hover,
+.btn:hover {
+  background-color: #000000;
+  color: #000000;
+  transform: scale(1.05);
+  animation: blinkFont 1s infinite;
+}
+
+.banner__searchButton:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Image styling */
+.banner__info img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Add fade-in animations */
+.banner__info h1,
+.banner__info h5,
+.banner__searchButton,
+.btn,
+.banner__info img {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  color: #ffffff;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Blinking animation */
+@keyframes blinkFont {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+
+  .banner__search,
+  .banner__info {
+    padding: 10px;
+  }
+
+  .banner__info h1 {
+    font-size: 2rem;
+  }
+
+  .banner__info h5 {
+    font-size: 1rem;
+  }
+
+  .banner__searchButton,
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: auto;
+    padding: 40px;
+    flex-direction: column;
+  }
+}

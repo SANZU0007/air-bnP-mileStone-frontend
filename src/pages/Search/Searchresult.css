@@ -1,0 +1,129 @@
+/* New Background Styles */
+body {
+    background-color: #f3f1ff;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.6)),;
+    background-position: center;
+    background-repeat: no-repeat;
+   color: rgb(5, 5, 116);
+   
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Updated Search Result Styles */
+  .searchResult {
+    display: flex;
+    border: 2px solid #1f1f1f;
+    background-color: rgba(0, 5, 54, 0.979);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchResult:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .searchResult img {
+    height: 160px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .searchResult__heart {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .searchResult__info {
+    flex: 1;
+    color: #ffffff;
+  }
+  
+  .searchResult__infoTop p {
+    margin-bottom: 8px;
+    color: #fffdfd;
+  }
+  
+  .searchResult__infoTop h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .searchResult__infoTop p:last-child {
+    font-size: 14px;
+  }
+  
+  .searchResult__stars {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .searchResult:hover .searchResult__stars {
+    transform: scale(0.2s);
+    color: rgb(255, 145, 145);
+  }
+  
+  #searchResult__heart {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #searchResult:hover .searchResult__heart {
+    transform: scale(0.2s);
+    color: red;
+  }
+  .searchResult__star {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  
+  
+  .searchResult__price h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .searchResult__price p {
+    font-size: 14px;
+    color: #fffbfb;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .searchResult {
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+    }
+  
+    .searchResult img {
+      width: 100%;
+      max-width: 240px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    .searchResult__info {
+      text-align: center;
+    }
+  
+    .searchResult__heart,
+    .searchResult__stars {
+    
+      color: #f3f1ff;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/* Default Styles */
+.searchPage__info {
+    margin-top: 5%;
+    padding: 20px;
+    opacity: 0; /* Start with 0 opacity for the animation */
+    animation: fadeIn 1s forwards; /* Apply the fade-in animation */
+  }
+  
+  .searchPage__info > p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .searchPage__info > h1 {
+    margin-bottom: 30px;
+  }
+  
+  .searchPage__info > button {
+    margin: 5px;
+    border-radius: 30px;
+    text-transform: inherit;
+  }
+  
+  /* Keyframes for Fade-in Animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .searchPage__info {
+      padding: 10px;
+    }
+  
+    .searchPage__info > p {
+      font-size: 12px;
+    }
+  
+    .searchPage__info > h1 {
+      margin-bottom: 20px;
+    }
+  
+    .searchPage__info > button {
+      margin: 3px;
+    }
+  }
+  

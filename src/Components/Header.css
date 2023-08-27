@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    position: fixed; /* Use "fixed" for a non-scrolling header */
+    top: 0; /* You can use "0" here to stick it to the top */
+    width: 100%; /* Make the header span the full width */
+    z-index: 1000; /* Adjust the z-index as needed */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for the header */
+}
+
+  
+  .header__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .header__center {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 5px;
+    margin: 0 20px;
+  }
+  
+  .header__center input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+  }
+  /* styles.css */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__right p {
+  margin: 0; /* Remove default margin */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__right p:hover {
+  text-decoration: underline;
+}
+
+/* Style for icons */
+.header__right svg {
+  width: 24px;
+  height: 24px;
+  fill: #333; /* Change the color as needed */
+}
