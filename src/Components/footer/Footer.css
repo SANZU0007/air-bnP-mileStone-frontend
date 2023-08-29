@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f04848;
+    background-color: #ffffff;
     padding: 20px 0;
     text-align: center;
   }
@@ -9,7 +9,7 @@
   }
   
   .footer__links a {
-    color: #faf2f2;
+    color: #1100ff;
     text-decoration: none;
     margin: 0 10px;
   }

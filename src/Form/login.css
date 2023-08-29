@@ -1,0 +1,98 @@
+/* Login.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .d-grid {
+    display: grid;
+  }
+  
+  .gap-2 {
+    gap: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .forget,
+  .signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .reset-password p,
+  .signup p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .reset-password button,
+  .signup button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .reset-password button:hover,
+  .signup button:hover {
+    text-decoration: underline;
+  }
+  .login-success-alert {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4caf50; /* Green background color */
+    color: white; /* Text color */
+    border-radius: 4px;
+    margin-top: 10px;
+  }  

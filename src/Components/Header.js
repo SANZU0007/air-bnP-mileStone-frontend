@@ -4,13 +4,24 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import LanguageIcon from '@mui/icons-material/Language';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import {Link} from "react-router-dom"
+import {Link ,useNavigate,useLocation} from "react-router-dom"
 
 
 
 import "./Header.css"; // Make sure to provide the correct path to your CSS file
 
 const Header = () => {
+  const location = useLocation();
+  const userName = location.state?.userName;
+
+  
+  const history = useNavigate(); 
+
+ 
+  const handleAccountIconClick = () => {
+   
+    history("/login");
+  };
   return (
     <div className="header">
     <Link to="/">
@@ -28,14 +39,19 @@ const Header = () => {
        
       </div>
       
+      {userName && (
+          <p>{`Welcome, ${userName}!`}</p>
+        )}
+      
       {/* Right-aligned section */}
       <div className="header__right">
-        <p>Become a host</p>
+        <b></b>
         <LanguageIcon/>
-        <AccountCircleIcon/>
+        <AccountCircleIcon onClick={handleAccountIconClick}/>
+        <ExpandMoreIcon/>
 
       
-        <ExpandMoreIcon />
+        
        
        
       </div>

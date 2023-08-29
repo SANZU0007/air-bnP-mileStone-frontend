@@ -20,7 +20,7 @@ const Search = () => {
         location="Private Rooms in Bangalore"
         title="Stay at this spacious Golorian House"
         description="1 guest • 1 bedroom • 1 bed • 1.5 shared bathrooms • Wifi • Kitchen • Free parking • Washing Machine"
-        star={4.73}
+        star={4.73} 
         price="$20 / night"
         total="$130 total"
       />
@@ -122,6 +122,7 @@ const Search = () => {
         description="1 guest • 1 bedroom • 1 bed • 1.5 shared bathrooms • Wifi • Kitchen • Free parking • Washing Machine"
         star={4.26}
         price="$40 / night"
+        
         total="$260 total"
       />
       

@@ -1,9 +1,18 @@
 import React from "react";
 import "./cart.css"
+import { useNavigate } from "react-router-dom";
 
 
 const Card = ({ src, title, description, price }) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    
+    navigate("/login"); 
+  };
   return (
+  
     <div className="card">
       <img src={src} alt="" />
       <div className="card__info">
@@ -13,7 +22,7 @@ const Card = ({ src, title, description, price }) => {
         <br></br>
         <br></br>
        
-        <button className="btn1">{price}</button>
+        <button className="btn1" onClick={handleClick}>{price}</button>
 
        
       </div>

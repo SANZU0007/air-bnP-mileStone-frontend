@@ -1,0 +1,45 @@
+/* Book.css */
+
+/* Style for the form header */
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+input {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto 10px;
+  border: 1px solid #fff8f8;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px 20px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the message paragraph */
+p {
+  font-size: 14px;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+}

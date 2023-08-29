@@ -65,8 +65,8 @@
 
 .btn1 {
     display: inline-block;
-    background-color: #ffffff;
-    color: #f00e0e;
+    background-color: #060aff;
+    color: #fffdfd;
     border: none;
     border-radius: 5px;
     padding: 8px 15px;
@@ -83,6 +83,6 @@
   .true {
     margin: 10px 0;
     font-size: 0.9rem;
-    color: #777;
+    color: #ffffff;
   }
   
