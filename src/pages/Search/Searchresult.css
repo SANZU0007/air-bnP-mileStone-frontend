@@ -1,6 +1,6 @@
 /* New Background Styles */
 body {
-  background-color: #f3f1ff;
+  background-color: #ffffff;
   background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.6));
   background-position: center;
   background-size: cover;
@@ -22,8 +22,8 @@ body {
 /* Updated Search Result Styles */
 .searchResult {
   display: flex;
-  border: 2px solid #1f1f1f;
-  background-color: rgba(244, 245, 253, 0.979);
+  border: 2px solid #003cff;
+  background-color: rgba(255, 255, 255, 0.979);
   padding: 20px;
   margin: 20px 0;
   position: relative;
@@ -34,7 +34,7 @@ body {
 
 .searchResult:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 17, 255, 0.2);
 }
 
 .searchResult__imageContainer {

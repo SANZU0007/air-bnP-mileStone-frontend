@@ -1,14 +1,47 @@
-/* Default Styles */
+/* Base Styles */
+.searchpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-right: 20px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 20px;
+  gap: 100px;
+  padding-right: 20px;
+}
+
+/* Media query for screens with a minimum width of 768px (small tablets and larger) */
+@media (min-width: 768px) {
+  .logo {
+    gap: 50px;
+    padding-right: 10px;
+  }
+}
+
+/* Media query for screens with a maximum width of 767px (smaller devices like phones) */
+@media (max-width: 767px) {
+  .logo {
+    gap: 20px;
+    padding-right: 5px;
+  }
+}
+
 .searchPage__info {
   margin-top: 5%;
-  padding: 20px;
-  opacity: 0; /* Start with 0 opacity for the animation */
-  transform: translateY(-20px); /* Move element up slightly */
-  animation: fadeInUp 1s forwards, slideIn 1s forwards; /* Apply animations */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  background-color: #ffffff;
+ padding-right: 50px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards, slideIn 1s forwards;
+
+  background-color: #fcfcfc;
   border-radius: 10px;
 }
+
 
 .searchPage__info > p {
   margin-bottom: 10px;
@@ -20,6 +53,8 @@
   font-size: 24px;
 }
 
+
+/* Button Styles */
 .searchPage__info > button {
   margin: 10px 5px;
   padding: 10px 20px;
@@ -29,15 +64,14 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Hover effect for the button */
 .searchPage__info > button:hover {
   background-color: #ff4500;
 }
 
-/* Keyframes for Fade-in and Slide-in Animations */
+/* Keyframes for Animations */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -72,14 +106,4 @@
     margin: 5px;
     padding: 8px 15px;
   }
-  #book-room {
-    margin-top: 5%;
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-}
-#book-room {
-  margin-top: 15%;
-  font-size: 24px;
-  margin-bottom: 15px;
 }
