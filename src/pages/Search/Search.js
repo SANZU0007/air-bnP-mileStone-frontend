@@ -2,7 +2,14 @@ import React from 'react'
 
 import SearchResult from './SearchResult'
 import "./Search.css"
+import {useNavigate } from 'react-router-dom'
+
 const Search = () => {
+
+  const navigate = useNavigate();
+  const handle=()=>{
+    navigate("/")
+  }
   return (
     <div className='searchpage'>
        <div className="searchPage__info">
@@ -12,15 +19,15 @@ const Search = () => {
         <p>62 stays • 26 August to 30 August • 2 guest</p>
         <h1>Stays nearby</h1>
         <div className='logo'>
-        <img src='https://cdn-icons-png.flaticon.com/128/3175/3175199.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/2897/2897350.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/1944/1944671.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/3660/3660499.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/6676/6676575.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/3660/3660349.png' ></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/7577/7577410.png' alt='no image'></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/1813/1813617.png' alt='no image'></img>
-        <img src='https://cdn-icons-png.flaticon.com/128/6330/6330092.png' alt='no image'></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/3175/3175199.png' alt='no image' onClick={handle} ></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/2897/2897350.png' alt='no image'onClick={handle} ></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/1944/1944671.png'alt='no image' onClick={handle}></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/3660/3660499.png' alt='no image'onClick={handle} ></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/6676/6676575.png'alt='no image' onClick={handle}></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/3660/3660349.png'alt='no image' onClick={handle}></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/7577/7577410.png' alt='no image'  onClick={handle}></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/1813/1813617.png' alt='no image '  onClick={handle}></img>
+        <img src='https://cdn-icons-png.flaticon.com/128/6330/6330092.png' alt='no image'  onClick={handle}></img>
         </div>
       </div>
 
